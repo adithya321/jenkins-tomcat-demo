@@ -21,7 +21,7 @@ pipeline {
             steps {
                 sh 'sed -i -e "s/latest/$BUILD_TAG/g" deployment.yml'
                 sh 'kubectl apply -f deployment.yml'
-                sh 'kubectl rollout status deploy/tomcat-demo'
+                sh 'kubectl rollout status deploy/tomcat-demo-deployment'
             }
         }
     }
