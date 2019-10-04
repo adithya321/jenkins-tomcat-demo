@@ -32,7 +32,7 @@ spec:
         app: tomcat-demo
     spec:
       containers:
-      - image: adithya321/jenkins-tomcat-demo:latest
+      - image: admatic/jenkins-tomcat-demo:latest
         name: tomcat-demo
         ports:
         - containerPort: 8080

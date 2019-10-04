@@ -9,12 +9,12 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh 'docker build -t adithya321/jenkins-tomcat-demo:$BUILD_TAG .'
+                sh 'docker build -t admatic/jenkins-tomcat-demo:$BUILD_TAG .'
             }
         }
         stage('Push') {
             steps {
-                sh 'docker push adithya321/jenkins-tomcat-demo:$BUILD_TAG'
+                sh 'docker push admatic/jenkins-tomcat-demo:$BUILD_TAG'
             }
         }
         stage('Deploy') {
