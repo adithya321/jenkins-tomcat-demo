@@ -11,7 +11,7 @@ import java.net.UnknownHostException;
 @RestController
 public class GreetingController {
 
-    private static final String template = "Welcome, %s!";
+    private static final String template = "Hello, %s!";
     private final AtomicLong counter = new AtomicLong();
 
     @RequestMapping("/greeting")
